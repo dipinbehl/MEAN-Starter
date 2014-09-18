@@ -1,0 +1,7 @@
+<form ng-submit='login()' ng-controller='loginController'>
+<label value="User Name" for="txtUserName"><input id="txtUserName" type="text" ng-model="loginCredentials.loginName" /><br/>
+<label value="Password" for="txtPassword"><input id="txtPassword" type="password" ng-model="loginCredentials.password" /><br/>
+<input style="float:right" type="submit" value"Login" />
+<br/><b>{{ type }}</b>{{ message }}
+</form>
+<script src='app/scripts/controllers/public/loginController.js'></script>

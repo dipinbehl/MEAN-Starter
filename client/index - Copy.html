@@ -1,0 +1,24 @@
+<!doctype html>
+<html ng-app="parlasa">
+<head>
+	<title>Test</title>
+	<script src='vendors/angular.js'></script>
+	<script src='app/js/app.js'></script>
+	<script src='app/js/service/authenticationService.js'></script>
+	<script src='app/js/controllers/public/loginController.js'></script>
+</head>
+<body ng-controller='loginController'>
+
+	<form ng-submit='login()'>
+		<label for='txtloginname' value='user name'/>&nbsp;&nbsp;<input name='txtloginname' type='text' ng-model='loginCredentials.loginName' /><br/>
+		<label for='txtpassword' value='password'/>&nbsp;&nbsp;<input name='txtpassword' type='password' ng-model='loginCredentials.password' /><br/>
+		<b>{{ type }}</b> : {{ message }} </br>
+		<input type='submit' value='login'/>
+	</form>
+	
+	<!-- <script src='vendors/angular.js'></script>
+	<script src='app/js/service/authenticationService.js'></script>
+	<script src='app/js/controllers/public/loginController.js'></script>
+	<script src='app/js/app.js'></script> -->
+</body>
+</html>

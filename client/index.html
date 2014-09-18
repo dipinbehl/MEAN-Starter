@@ -1,0 +1,31 @@
+<!doctype html>
+<html ng-app="means">
+<head>
+	<title>MEAN Starter</title>
+	<script src='vendors/angular.js'></script>
+	<script src='vendors/angular-ui-router.min.js'></script>
+	<script src='app/scripts/app.js'></script>
+	<script src='app/scripts/routes/public.js'></script>
+	<script src='app/scripts/controllers/public/loginController.js'></script>
+	<script src='app/scripts/service/authenticationService.js'></script>
+	<style>
+		div {
+			display:block;
+			width:100%;
+			border: 1px solid black;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<div style="height:80px;" ui-view="header">
+</div>
+<div style="height:30px;" ui-view="nav">
+</div>
+<div style="height:520px;" ui-view="content">
+</div>
+<div style="height:23px;" ui-view="footer">
+</div>
+
+</body>
+</html>
