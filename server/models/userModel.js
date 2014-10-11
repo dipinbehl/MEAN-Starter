@@ -15,7 +15,6 @@ var userSchema = mongoose.Schema({
 		LastName: String,
 		EmailAddress: String,
 		Password: { type: String, select: false },
-		Agency: { type: mongoose.Schema.ObjectId, ref: 'Agency' },
 		Roles: { type: String, enum : enums.UserRoles },
 		ProfileImageExtension: String,
 		LastLogin: Date,

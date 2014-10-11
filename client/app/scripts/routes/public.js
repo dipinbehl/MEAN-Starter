@@ -8,7 +8,7 @@ return {
 };
 }
 
-angular.module('parlasa').config(function($stateProvider, $urlRouterProvider){
+angular.module('means').config(function($stateProvider, $urlRouterProvider){
 	//$urlRouterProvider.when('', function
 	$stateProvider
 		.state('home', {
